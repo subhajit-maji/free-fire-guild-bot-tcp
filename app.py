@@ -1,4 +1,5 @@
 import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re , socket , threading , ssl , pytz , aiohttp
+import xHeaders
 from protobuf_decoder.protobuf_decoder import Parser
 from xC4 import * ; from xHeaders import *
 from datetime import datetime
@@ -1580,7 +1581,7 @@ Hr = {
     'Expect': "100-continue",
     'X-Unity-Version': "2018.4.11f1",
     'X-GA': "v1 1",
-    'ReleaseVersion': RELEASE_VERSION}
+    'ReleaseVersion': xHeaders.RELEASE_VERSION}
 
 # ---- Random Colores ----
 def get_random_color():
