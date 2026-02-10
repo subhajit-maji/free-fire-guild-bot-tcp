@@ -353,7 +353,7 @@ async def RedZed_SendInv(bot_uid, uid, key, iv):
                     2: 159, 
                     4: "y[WW", 
                     6: 11, 
-                    8: "1.118.1", 
+                    8: "1.120.2", 
                     9: 3, 
                     10: 1
                 }, 
@@ -1580,7 +1580,7 @@ Hr = {
     'Expect': "100-continue",
     'X-Unity-Version': "2018.4.11f1",
     'X-GA': "v1 1",
-    'ReleaseVersion': "OB51"}
+    'ReleaseVersion': "OB52"}
 
 # ---- Random Colores ----
 def get_random_color():
@@ -1677,7 +1677,7 @@ async def EncRypTMajoRLoGin(open_id, access_token):
     major_login.event_time = str(datetime.now())[:-7]
     major_login.game_name = "free fire"
     major_login.platform_id = 1
-    major_login.client_version = "1.118.1"
+    major_login.client_version = "1.120.2"
     major_login.system_software = "Android OS 9 / API-28 (PQ3B.190801.10101846/G9650ZHU2ARC6)"
     major_login.system_hardware = "Handheld"
     major_login.telecom_operator = "Verizon"

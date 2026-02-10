@@ -1,6 +1,6 @@
 # Free Fire Guild Bot (TCP)
 
-**Version:** OB51
+**Version:** OB52
 
 A Python-based project demonstrating TCP socket communication, structured data handling, and automation concepts using a Free Fire–style guild bot as a learning example.
 
@@ -10,7 +10,7 @@ This repository is intended strictly for educational and research purposes.
 
 ## ✨ Features
 
-- Compatible with Free Fire OB51 (experimental)
+- Compatible with Free Fire OB52 (experimental)
 - TCP-based networking using Python sockets
 - Clean and modular project structure
 - Protocol Buffers (.pb2) for data serialization
