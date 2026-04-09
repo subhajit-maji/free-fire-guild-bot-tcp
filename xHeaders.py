@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
-RELEASE_VERSION = "OB52"
+RELEASE_VERSION = "OB53"
 
 def ToK():
     while True:
