@@ -7,7 +7,8 @@ from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
-RELEASE_VERSION = "OB53"
+RELEASE_VERSION = "OB54"
+CLIENT_BASE_URL = "https://client.ind.freefiremobile.com"
 
 def ToK():
     while True:
@@ -72,7 +73,7 @@ def Requests_SPam(id):
 
 def GeT_Name(uid , Token):
     data = bytes.fromhex(EnC_AEs(f"08{EnC_Uid(uid , Tp = 'Uid')}1007"))
-    url = "https://clientbp.common.ggbluefox.com/GetPlayerPersonalShow"
+    url = f"{CLIENT_BASE_URL}/GetPlayerPersonalShow"
     headers = {
         'X-Unity-Version': '2018.4.11f1',
         'ReleaseVersion': RELEASE_VERSION,
@@ -81,7 +82,7 @@ def GeT_Name(uid , Token):
         'Authorization': f'Bearer {GeTToK()}',
         'Content-Length': '16',
         'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-        'Host': 'clientbp.ggblueshark.com',
+        'Host': 'client.ind.freefiremobile.com',
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip'
     }
@@ -97,7 +98,7 @@ def GeT_Name(uid , Token):
             	  	
 def GeT_PLayer_InFo(uid , Token):
     data = bytes.fromhex(EnC_AEs(f"08{EnC_Uid(uid , Tp = 'Uid')}1007"))
-    url = "https://clientbp.common.ggbluefox.com/GetPlayerPersonalShow"
+    url = f"{CLIENT_BASE_URL}/GetPlayerPersonalShow"
     headers = {
         'X-Unity-Version': '2018.4.11f1',
         'ReleaseVersion': RELEASE_VERSION,
@@ -106,7 +107,7 @@ def GeT_PLayer_InFo(uid , Token):
         'Authorization': f'Bearer {GeTToK()}',
         'Content-Length': '16',
         'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-        'Host': 'clientbp.ggblueshark.com',
+        'Host': 'client.ind.freefiremobile.com',
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip'}
     response = requests.post(url , headers=headers , data=data ,verify=False)
@@ -186,7 +187,7 @@ def GeT_PLayer_InFo(uid , Token):
     
 def DeLet_Uid(id , Tok):
     print(f' Done FuckinG > {id} ')
-    url = 'https://clientbp.common.ggbluefox.com/RemoveFriend'
+    url = f'{CLIENT_BASE_URL}/RemoveFriend'
     headers = {
         'X-Unity-Version': '2018.4.11f1',
         'ReleaseVersion': RELEASE_VERSION,
@@ -195,7 +196,7 @@ def DeLet_Uid(id , Tok):
         'Authorization': f'Bearer {Tok}',
         'Content-Length': '16',
         'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-        'Host': 'clientbp.ggblueshark.com',
+        'Host': 'client.ind.freefiremobile.com',
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip'}
     data = bytes.fromhex(EnC_AEs(f"08a7c4839f1e10{EnC_Uid(id , Tp = 'Uid')}"))

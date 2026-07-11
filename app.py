@@ -1677,7 +1677,7 @@ async def EncRypTMajoRLoGin(open_id, access_token):
     major_login.event_time = str(datetime.now())[:-7]
     major_login.game_name = "free fire"
     major_login.platform_id = 1
-    major_login.client_version = "1.123.1"
+    major_login.client_version = "1.126.2"
     major_login.system_software = "Android OS 9 / API-28 (PQ3B.190801.10101846/G9650ZHU2ARC6)"
     major_login.system_hardware = "Handheld"
     major_login.telecom_operator = "Verizon"
@@ -1735,7 +1735,7 @@ async def EncRypTMajoRLoGin(open_id, access_token):
     return  await encrypted_proto(string)
 
 async def MajorLogin(payload):
-    url = "https://loginbp.ggblueshark.com/MajorLogin"
+    url = "https://loginbp.ggpolarbear.com/MajorLogin"
     ssl_context = ssl.create_default_context()
     ssl_context.check_hostname = False
     ssl_context.verify_mode = ssl.CERT_NONE
