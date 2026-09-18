@@ -1,6 +1,6 @@
 # ------------------------------------------------------------
 # Instagram Info API — Credit: SM (@SubhajitMajiRobot)
-# JOIN    : @SubhajitMajiRobot  FOR MORE SRC | API | BOT CODE | METHOD | 🛐
+# JOIN    : @SubhajitMajiRobot  FOR MORE SRC | API | BOT CODE | METHOD |
 # Purpose : Fetch profile & recent media (public + optional session-based)
 # Note    : THIS CODE MADE BY SM @SubhajitMajiRobot (GIVE CREDIT OTHERWISE EVERYONE **** YOU AT 300 KM SPEED)
 # Usage   : /api/insta/<username>?
