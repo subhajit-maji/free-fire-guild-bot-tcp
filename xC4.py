@@ -1,4 +1,4 @@
-# By AbdeeLkarim BesTo
+# By SM
 
 import requests , json , binascii , time , urllib3 , base64 , datetime , re ,socket , threading , random , os , asyncio
 from protobuf_decoder.protobuf_decoder import Parser
